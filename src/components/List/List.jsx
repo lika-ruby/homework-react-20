@@ -3,7 +3,7 @@ import { AnimalContext } from "../../contexts/AnimalContext.jsx";
 import { Item } from "../Item/Item.jsx";
 import { Sect, Title, ListS } from "./List.js";
 
-export const List = () => {
+export const List = ({ openModal }) => {
   const { filterAnimals, filter } = useContext(AnimalContext);
   const animals = useMemo(() => {
     console.log("🔍 Викликається фільтрація...");
@@ -23,6 +23,7 @@ export const List = () => {
             weight={ani.weight}
             habitat={ani.habitat}
             description={ani.description}
+            openModal={openModal}
           />
         ))}
       </ListS>

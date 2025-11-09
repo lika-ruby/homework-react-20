@@ -8,9 +8,14 @@ export const Item = ({
   weight,
   habitat,
   description,
+  openModal,
 }) => {
+  const handleClick = () => {
+    openModal({ id, name, age, height, weight, habitat, description });
+  };
+
   return (
-    <ItemS id={id}>
+    <ItemS onClick={handleClick} id={id}>
       <Title>{name}</Title>
       <ListD>
         <ItemD>

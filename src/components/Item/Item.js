@@ -14,13 +14,11 @@ export const Title = styled.h2`
 export const ListD = styled.ul`
  display: flex;
  justify-content: center;
- gap: 32px;
+ gap:12px 32px ;
  flex-wrap: wrap;
 `;
 
 export const ItemD = styled.li`
- padding - left: 15px;
-    margin: 10px 0;
 `;
 
 export const Text = styled.p`
@@ -31,11 +29,10 @@ export const Text = styled.p`
  flex-wrap: wrap;
  color:rgb(82, 52, 32);
  font-weight: 600;
-    margin-bottom: 20px;
     font-size:20px;
 `;
 
-export const Span = styled.p`
+export const Span = styled.span`
  padding - left: 15px;
  font-weight: 500;
  color:rgb(119, 72, 40);

@@ -44,7 +44,10 @@ body{
     font-family: 'Inter', sans-serif;
 	background-color:rgb(146, 75, 63);
 	min-height: 100vh;
- 
+}
+	.no-scroll {
+  overflow: hidden;
+  height: 100vh;
 }
 
 *{
